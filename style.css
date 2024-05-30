@@ -1,0 +1,384 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("backgrounds/carbon.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+}
+h1
+{
+font-family: Avenir, Helvetica, sans-serif;
+color: white;
+font-weight: normal;
+font-size: 48px
+}
+h2
+{
+font-family: Avenir, Helvetica, sans-serif;
+color: white;
+font-weight: normal;
+font-size: 36px
+}
+h3
+{
+font-family: Avenir, Helvetica, sans-serif;
+font-weight: normal;
+font-size: 24px;
+margin-bottom: 10px;
+}
+p
+{
+  font-family: Avenir;
+  color: white;
+  font-size: 18px;
+  margin: 10px;
+}
+li
+{
+  font-family: Avenir;
+  color: white;
+}
+figcaption
+{
+  font-family: Avenir;
+  color: white;
+  text-align: center;
+}
+a{
+  color: inherit;
+}
+a:hover{
+  color: #0091ff !important;
+}
+a:visited {
+  color: inherit;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+td {
+  width: 50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.button0{
+  font-family: Avenir;
+  font-size: 20px;
+  border: none;
+  padding: 5px;
+  text-decoration: none;
+}
+.button0:hover{
+  background-color: #cccccc;
+}
+.iconImg{
+  width:500px;
+  height:auto;
+  padding:20px;
+
+  transition: all 0.2s;
+}
+.iconImg:hover{
+  width:540px;
+  height:auto;
+  padding:10px;
+  transition: all 0.2s;
+}
+.iconImg2{
+  width:300px;
+  height:auto;
+  padding:20px;
+
+  transition: all 0.2s;
+}
+.iconImg2:hover{
+  width:340px;
+  height:auto;
+  padding:10px;
+  transition: all 0.2s;
+}
+.abtMain{
+  overflow: auto;
+  margin:0 auto; 
+  margin-top:5vh; 
+  position:relative; 
+  padding:20px;
+  padding-top:60px;
+  width:80vw; 
+  height:90vh; 
+  background-image: url('backgrounds/carbon.jpg');
+  border: 2px solid white;
+  border-radius: 3px;
+}
+.abtMain::-webkit-scrollbar {
+  width: 10px;
+}
+
+.abtMain::-webkit-scrollbar-track {
+  background: rgba(200, 200, 200, 0.4);
+}
+
+.abtMain::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: rgba(50, 50, 50, 0.8);
+}
+.clickableImg{
+  width:90%;
+  height:auto;
+  transition: all 0.2s;
+}
+.clickableImg:hover{
+  width:95%;
+  height:auto;
+  padding: auto;
+  transition: all 0.2s;
+}
+.x {
+position: fixed;
+top: 8%;
+right: 10%;
+font-size: 30px;
+width: 60px;
+height: 60px;
+text-align: center;
+}
+.x:hover, .clickableImg:hover{
+  background-color: rgba(100, 100, 100, 0.5);
+}
+#heading{
+  width: 100%;
+  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#logoimg{
+  width:350px;
+  height:auto;
+  transition: all 0.2s;
+}
+#logoimg:hover{
+  width:400px;
+  height:auto;
+  transition: all 0.2s;
+}
+#main{
+  display: flex;
+}
+#main > div {
+  flex: 1; /*grow*/
+}
+#about{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+#box1{
+  background-image: url("bg/f4u.png");
+    background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, calc(100%) 0, calc(100% - 3vw) 100%, 0 100%);
+  color: white;
+  text-align: center;
+  height: 500px;
+  transition: flex-grow 2s;
+}
+#b1i{
+  padding-top:1px;
+  height: 100px;
+  background-color: blue;
+  text-align: center;
+  transition: background 2s;
+}
+#box1:hover{
+  flex-grow: 6;
+  transition: all 2s;
+}
+#box1:hover #b1i{
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background 1.5s linear;
+  transition: all 2s;
+}
+#box1b{
+  background-image: url("art/KRONOS.png");
+    background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, calc(100%) 0, calc(100% - 3vw) 100%, 0 100%);
+  color: white;
+  text-align: center;
+  height: 500px;
+  transition: flex-grow 2s;
+}
+#box1b:hover{
+  flex-grow: 6;
+  transition: all 2s;
+}
+#box1b:hover #b1i{
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background 1.5s linear;
+  transition: all 2s;
+}
+#box2{
+  background-image: url("rlx.png");
+    background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(3vw 0, calc(100%) 0, calc(100% - 3vw) 100%, 0px 100%);
+  color: black;
+  text-align: center;
+  height: 500px;
+  transition: flex-grow 2s;
+}
+#box2:hover{
+  flex-grow: 6;
+  transition: all 2s;
+}
+#b2i{
+  padding-top:1px;
+  background-color: white;
+  height: 100px;
+  text-align: center;
+  transition: background 2s;
+}
+#box2:hover #b2i{
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background 1.5s linear;
+  transition: all 2s;
+}
+#box2b{
+  background-image: url("designs/prob/prob1.png");
+    background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(3vw 0, calc(100%) 0, calc(100% - 3vw) 100%, 0px 100%);
+  color: black;
+  text-align: center;
+  height: 500px;
+  transition: flex-grow 2s;
+}
+#box2b:hover{
+  flex-grow: 6;
+  transition: all 2s;
+}
+#box2b:hover #b2i{
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background 1.5s linear;
+  transition: all 2s;
+}
+#box3{
+  background-image: url("bg/eot.png");
+    background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(3vw 0, 100% 0, 100% 100%, 0px 100%);
+  color: white;
+  text-align: center;
+  height: 500px;
+  transition: flex-grow 2s;
+}
+#box3:hover{
+  flex-grow: 6;
+  transition: all 2s;
+}
+#b3i{
+  padding-top:1px;
+  background-color: red;
+  height: 100px;
+  text-align: center;
+  transition: background 2s;
+}
+#box3:hover #b3i{
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background 1.5s linear;
+  transition: all 2s;
+}
+#break1
+    {
+    background-image: url("bg/rlx.JPG");
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: white;
+    padding-top: 45px;
+    padding-left: 0px;
+    padding-bottom: 45px;
+    }
+#break2
+    {
+    background-image: url("shuttle.png");
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: white;
+    padding-top: 65px;
+    padding-left: 0px;
+    padding-bottom: 45px;
+    }
+#break3
+    {
+    background-image: url("rlxs.jpg");
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: white;
+    padding-top: 65px;
+    padding-left: 0px;
+    padding-bottom: 45px;
+    }
+footer{
+  background-image: url("backgrounds/carbon.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Avenir, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  padding-left: 50px;
+}
+    .b1{
+      background-color: blue;
+      height: 10px;
+      margin-right: 20px;
+    }
+    .b2{
+      background-color: white;
+      height: 10px;
+      margin-right: 20px;
+    }
+    .b3{
+      background-color: red;
+      height: 10px;
+      margin-right: 20px;
+    }
