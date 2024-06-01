@@ -177,6 +177,8 @@ text-align: center;
   text-align: center;
   width: 80%;
   margin: auto;
+  padding: 50px;
+  padding-top: 100px;
 }
 #box1{
   background-image: url("bg/f4u.png");
