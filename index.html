@@ -161,6 +161,9 @@
         <td><a href="https://af267.github.io/NativePark/" target="_blank"><img class="clickableImg"
               src="np/np-0.png"></img></a></td>
       </tr>
+      <tr>
+        <td><a href="#mt1"><img class="clickableImg" src="mt1/mt-1.png" onclick="slidesShow('mt1')"></img></a></td>
+      </tr>
     </table>
   </div>
 
@@ -716,6 +719,83 @@
     </div>
   </div>
 
+  <div id="mt1"
+    style="display:none; position:fixed; top:0; width:100vw; height:100vw; background-color:rgba(0, 0, 0, 0.8)">
+    <div class="abtMain">
+
+
+      <div class="slideshow-container" id="slideshow9" style="margin: auto">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="mt1/mt-1.png" style="width:90%">
+          <div class="text">MagneTube Conventional/Maglev High-Speed EMU</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="mt1/mt-2.png" style="width:90%">
+          <div class="text">Configurations</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <img src="mt1/mt-3.png" style="width:90%">
+          <div class="text">Coach Interior</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="mt1/mt-4.png" style="width:90%">
+          <div class="text">Cafe Interior</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="mt1/mt-5.png" style="width:90%">
+          <div class="text">Emergency Manual Control Cab</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 8</div>
+          <img src="mt1/mt-cr.png" style="width:90%">
+          <div class="text">CR MT1 (right) with MT1f Freight (left)</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 8</div>
+          <img src="mt1/mt-jr.png" style="width:90%">
+          <div class="text">JR MT1x Test Train on Chuo Shinkansen</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 8</div>
+          <img src="mt1/mt-kr.png" style="width:90%">
+          <div class="text">Korail MT1 KTX</div>
+        </div>
+
+      </div>
+      <div class="x" onclick="slidesHide('prob')">
+        <h1 style="margin:0 auto; text-align: center; vertical-align: middle;" onclick="slidesHide('prob')">✕</h1>
+      </div>
+      <br>
+
+
+      <div style="text-align:center">
+        <a class="prev" onclick="plusSlides(-1, 'slideshow9')">〈</a>
+        <span class="dot" onclick="currentSlide(1, 'slideshow9')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow9')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow9')"></span>
+        <span class="dot" onclick="currentSlide(4, 'slideshow9')"></span>
+        <span class="dot" onclick="currentSlide(5, 'slideshow9')"></span>
+        <span class="dot" onclick="currentSlide(6, 'slideshow9')"></span>
+        <span class="dot" onclick="currentSlide(7, 'slideshow9')"></span>
+        <span class="dot" onclick="currentSlide(8, 'slideshow9')"></span>
+        <a class="next" onclick="plusSlides(1, 'slideshow9')">〉</a>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Store slide indices for each slideshow
     const slideIndices = {};
@@ -760,6 +840,7 @@
     initSlides('slideshow6');
     initSlides('slideshow7');
     initSlides('slideshow8');
+    initSlides('slideshow9');
   </script>
   <script>
     window.slidesShow = (name) => {
